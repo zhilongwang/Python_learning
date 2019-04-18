@@ -60,6 +60,8 @@
       inspect.getsource(BeautifulSoup) #当想看源代码
       inspect.isclass(add)
       inspect.isfunction(add)
+      file = open('debug.txt','w+')
+      print >> file, inspect.getsourcelines(angr.engines.successors.SimSuccessors)
       
      ```
    
