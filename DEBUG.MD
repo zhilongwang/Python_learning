@@ -57,7 +57,9 @@
       type(obj)# 确定对象的类型
       inspect.getdoc(BeautifulSoup) # 查看文档定义
       inspect.getsourcefile(BeautifulSoup) # 再来看看存放的路径
-      inspect.getsourcelines(BeautifulSoup) #当想看源代码
+      inspect.getsource(BeautifulSoup) #当想看源代码
+      inspect.isclass(add)
+      inspect.isfunction(add)
       
      ```
    
@@ -75,6 +77,19 @@
       
       
      ```
-
-
+     
+     
+   #### 
+   
+     ```python 
+       
+     import sys 
+     def get_cur_info(): 
+     print sys._getframe().f_code.co_filename # 当前文件名 
+     print sys._getframe(0).f_code.co_name # 当前函数名
+     print sys._getframe(1).f_code.co_name # 调用该函数的函数的名字，如果没有被调用，
+     print sys._getframe().f_lineno # 当前行号 
+     
+     ```
   
+
