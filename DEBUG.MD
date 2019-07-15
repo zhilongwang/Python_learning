@@ -130,3 +130,6 @@
     - alias 以一个"别名"代替"一群除错命令",有点类似 c/c 的 macro(详情请参考 Python Library Reference)。
     - unalias 取消某个 alias。
     - [!]statement 在目前的环境(context)中执行叙述。
+    
+ >跟踪 
+    python -mtrace --listfuncs solve.py
