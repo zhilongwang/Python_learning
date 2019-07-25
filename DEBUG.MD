@@ -133,3 +133,10 @@
     
  >跟踪 
     python -mtrace --listfuncs solve.py
+
+
+    - ignore 设定断点的忽略次数。如果没指定 count,其初始 为 0。当 count 为 0 时,断点会正常动作。若有指定 count,则每次执行到该中断, count 就少 1,直到 count 数为 0。工具
+    - ignore 设定断点的忽略次数。如果没指定 count,其初始 为 0。当 count 为 0 时,断点会正常动作。若有指定 count,则每次执行到该中断, count 就少 1,直到 count 数为 0
+    
+        
+ > Jupyter调试工具
